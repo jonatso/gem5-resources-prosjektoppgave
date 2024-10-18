@@ -70,6 +70,9 @@ sudo apt -y install amdgpu-dkms
 sudo apt -y install rocm
 sudo apt -y install cmake
 
+# Requirements for ROCm (got errors about missing glog)
+sudo apt -y install mesa-common-dev libgflags-dev libgoogle-glog-dev
+
 # Make directory for GPU BIOS. These are placed in /root for compatibility with
 # the legacy GPUFS configs.
 sudo mkdir -p /root/roms
